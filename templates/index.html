@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Classifier</title>
+    <script src="/static/script.js" defer></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form id="numberForm">
+
+        <h1>CHECK CI</h1>
+
+        <div class="form-row">
+            <label for="sepalLength">Sepal Length :</label>
+            <input type="number" id="sepalLength" min="0" max="8" required>
+        </div>
+
+        <div class="form-row">
+            <label for="sepalWidth">Sepal Length :</label>
+            <input type="number" id="sepalWidth" required min="0" max="8">
+        </div>
+
+        <div class="form-row">
+            <label for="petalLength">Sepal Length :</label>
+            <input type="number" id="petalLength" required min="0" max="8">
+        </div>
+
+        <div class="form-row">
+            <label for="petalWidth">Sepal Length :</label>
+            <input type="number" id="petalWidth" required min="0" max="8">
+        </div>
+
+        <div class="get-res">
+            <button type="button" onclick="sendNumbers()">Predict Species</button>
+            <p id="result"></p>
+        </div>
+
+    </form>
+    
+</body>
+</html>
